@@ -1,11 +1,16 @@
 package jp.ac.jec.cm0199.hellokotlin
 
+// メソッド作成のテスト
 fun main() {
-    val name1: String = "Saito"
-    println(name1.count())
+    var ret = sum(1, 2)
+    println(ret)
+    sum2(1, 2)
+}
 
-    var name2: String? = null
-    println(name2?.count())
-    name2 = "Tanaka"
-    println(name2?.count())
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun sum2(a: Int, b: Int) {
+    println(a + b)
 }
